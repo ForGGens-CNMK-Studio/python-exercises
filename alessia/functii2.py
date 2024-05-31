@@ -23,8 +23,12 @@ print("dictionar roman-englez")
 print("dictionar explicativ al limbii romane")
 print("dictionar roman-francez")
 
+
+
+def f(people):
+    for k, v in people.items():
+        print(k,v)
+
 people=[
    {"name":"saulea","age":"69", "city":"braila"},]
 print(people)
-for p in people:
-   print(p)
