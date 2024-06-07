@@ -1,2 +1,2 @@
-x=154
+x=input()
 print(x)
