@@ -79,3 +79,27 @@ print(a)  # Iordachescu Cristian are 22 ani si un salariu de 1000.
 a.marire_salariu(10)
 
 print(a)  # Iordachescu Cristian are 22 ani si un salariu de 1100.
+
+
+#  clasa cu atribute private
+class D:
+    def __init__(self):
+        self.__x = 10
+
+    def get_x(self):
+        return self.__x
+
+    def set_x(self, x):
+        self.__x = x
+
+
+# testam
+d = D()
+
+print(d.get_x())  # 10
+
+d.set_x(20)
+
+print(d.get_x())  # 20
+
+# d.__x = 30  # AttributeError: 'D' object has no attribute '__x'
